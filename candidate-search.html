@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate Search</title>
+  <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container container-bar">
+        <h2 class="logo">Hello</h2>
+        <nav class="navbar">
+            <a class="navigate" href="./index.html">Home</a>
+            <a class="navigate" href="./candidate-search.html">Search</a>
+            <a class="navigate" href="">About</a>
+            <a class="btn-login" href="./login.html">Login</a>           
+            <div class="dropdown">
+                <button class="dropdown-btn">&#9776;</button>
+                <div class="dropdown-content">
+                  <a href="">Home</a>
+                  <a href="">Search</a>
+                  <a href="">About</a>
+                  
+                </div>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <h1>Candidate Search</h1>
+
+    <form id="searchForm">
+      <label for="location">Location:</label>
+      <input type="text" id="location" placeholder="Enter location">
+
+      <label for="jobRole">Job Role:</label>
+      <select id="jobRole">
+        <option value="">Select job role</option>
+        <option value="engineer">Engineer</option>
+        <option value="designer">Designer</option>
+        <option value="manager">Manager</option>
+      </select>
+
+      <button type="submit" class="btn">Search</button>
+    </form>
+
+    <div class="candidates" id="candidatesList">
+      
+    </div>
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>  
+  <script src="./js/search.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

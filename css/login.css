@@ -29,6 +29,7 @@
 
 body{
   background: url('../src/2207.i605.048.S.m005.c13.office_illustration_Converted.png');
+  background-repeat: no-repeat;
   background-color: var(--color-primary);
   background-size: cover;
   color: #f1f1f1;
